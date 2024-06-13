@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "512135926669",
+    "project_id": "silverlife-9e00d",
+    "storage_bucket": "silverlife-9e00d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512135926669:android:824b4f79c5b86048ec63c4",
+        "android_client_info": {
+          "package_name": "com.example.silverlife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcsVBq18gela9y-uOEfa1Q0qZHsA7FXtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

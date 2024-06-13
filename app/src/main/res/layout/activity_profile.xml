@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E5C1C1">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_image_1"
+        android:layout_below="@id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/profile_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profissão"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/profile_profession"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/profile_description"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/ratings_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:text="Avaliações" />
+
+        <Button
+            android:id="@+id/schedule_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Agendamento" />
+    </LinearLayout>
+</RelativeLayout>

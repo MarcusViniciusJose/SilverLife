@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBAEB4"
+    tools:context=".ScheduleActivity">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_image_1"
+         />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="Fernanda"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:text="Enfermeira"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_role"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Data"
+        android:textColor="#0000FF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date_picker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_label"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:text="Selecionar data"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker_text"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Hora"
+        android:textColor="#0000FF"
+        android:textSize="16sp" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_picker"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/instagram_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_instagram"/>
+
+            <TextView
+                android:id="@+id/instagram_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Instagram"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/whatsapp_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_whatsapp"/>
+
+            <TextView
+                android:id="@+id/whatsapp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Whatsapp"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

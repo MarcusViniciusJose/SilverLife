@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5C1C1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF91A4"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_toRightOf="@id/logo_image"
+            android:text="SILVERLIFE"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:drawable="@drawable/rounded_corners">
+
+                <ImageView
+                    android:id="@+id/profile_image_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile_image_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circular_background"/>
+
+                <TextView
+                    android:id="@+id/username_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fernanda"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/profile_image_1"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/user_role_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enfermeira"
+                    android:layout_below="@id/username_1"
+                    android:layout_toEndOf="@id/profile_image_1"/>
+
+                <TextView
+                    android:id="@+id/user_description_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...."
+                    android:layout_below="@id/user_role_1"
+                    android:layout_toEndOf="@id/profile_image_1"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow_1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:drawable="@drawable/rounded_corners">
+
+                <ImageView
+                    android:id="@+id/profile_image_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile_image_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circular_background"/>
+
+                <TextView
+                    android:id="@+id/username_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Helo"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/profile_image_2"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/user_role_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuidadora"
+                    android:layout_below="@id/username_2"
+                    android:layout_toEndOf="@id/profile_image_2"/>
+
+                <TextView
+                    android:id="@+id/user_description_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...."
+                    android:layout_below="@id/user_role_2"
+                    android:layout_toEndOf="@id/profile_image_2"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow_2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:drawable="@drawable/rounded_corners">
+
+                <ImageView
+                    android:id="@+id/profile_image_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile_image_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circular_background"/>
+
+                <TextView
+                    android:id="@+id/username_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="José"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/profile_image_3"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/user_role_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enfermeiro"
+                    android:layout_below="@id/username_3"
+                    android:layout_toEndOf="@id/profile_image_3"/>
+
+                <TextView
+                    android:id="@+id/user_description_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum...."
+                    android:layout_below="@id/user_role_3"
+                    android:layout_toEndOf="@id/profile_image_3"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/arrow_3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

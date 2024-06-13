@@ -65,7 +65,7 @@ public class RatingsActivity extends AppCompatActivity {
             ImageView likeIcon = new ImageView(this);
             likeIcon.setImageResource(R.drawable.ic_thumb_up);
             LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(40, 40);
-            iconParams.setMargins(8, 0, 0, 0);  // Margin to add space between name and icon
+            iconParams.setMargins(8, 0, 0, 0);
             likeIcon.setLayoutParams(iconParams);
 
             reviewHeader.addView(reviewUserName);

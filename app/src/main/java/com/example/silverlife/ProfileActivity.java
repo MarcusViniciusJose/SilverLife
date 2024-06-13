@@ -30,7 +30,10 @@ public class ProfileActivity extends AppCompatActivity {
         if (userName != null && userName.equals("Fernanda")) {
             profileName.setText("Fernanda");
             profileProfession.setText("Enfermeira");
-            profileDescription.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            profileDescription.setText("Lorem ipsum dolor sit amet. Ab magnam ipsa ab eligendi quis eum sunt tenetur et magni nostrum At odit quaerat et molestiae deserunt et unde eveniet. Aut officia perspiciatis qui " +
+                    "molestias fuga aut iure similique sed tempora doloribus vel doloremque dignissimos. Sed laudantium accusamus ut ullam quidem qui labore saepe ut magnam commodi ut sunt alias.\n" +
+                    "Vel magnam voluptatem non omnis explicabo ut impedit. Aut deserunt saepe non beatae reiciendis qui sint veritatis. Qui ratione velit ut galisum impedit cum nihil deleniti id voluptatem voluptas ea iusto dicta.\n" +
+                    "\n");
         } else {
             profileName.setText("Nome não encontrado");
             profileProfession.setText("Profissão não disponível");
@@ -66,13 +69,13 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void goToReviews() {
         Intent intent = new Intent(ProfileActivity.this, RatingsActivity.class);
-        intent.putExtra("userName", "Fernanda"); // Passe o nome do usuário para a próxima atividade
+        intent.putExtra("userName", "Fernanda");
         startActivity(intent);
     }
 
     private void goToAppointment() {
         Intent intent = new Intent(ProfileActivity.this, ScheduleActivity.class);
-        intent.putExtra("userName", "Fernanda"); // Passe o nome do usuário para a próxima atividade
+        intent.putExtra("userName", "Fernanda");
         startActivity(intent);
     }
 }

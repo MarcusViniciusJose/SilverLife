@@ -62,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString().trim();
         String userType = userTypeSpinner.getSelectedItem().toString();
 
-        if (fullName.isEmpty() || email.isEmpty() || password.isEmpty()) {
+        if (fullName.isEmpty() || email.isEmpty() || password.isEmpty() || userType.equals("Selecionar")) {
             Toast.makeText(RegisterActivity.this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -75,6 +75,8 @@ public class RegisterActivity extends AppCompatActivity {
                             FirebaseUser firebaseUser = mAuth.getCurrentUser();
                             assert firebaseUser != null;
                             saveUserToFirestore(firebaseUser, fullName, email, userType);
+                            startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                            finish();
                         } else {
                             Toast.makeText(RegisterActivity.this, "Falha no registro.", Toast.LENGTH_SHORT).show();
                         }
@@ -89,6 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
                 .set(user)
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(RegisterActivity.this, "Registro bem-sucedido.", Toast.LENGTH_SHORT).show();
+                    FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                     finish();
                 })

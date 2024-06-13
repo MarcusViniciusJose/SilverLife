@@ -5,9 +5,9 @@ public class User {
     private String email;
     private String userType;
 
+    public User() {
 
-    public User() {}
-
+    }
 
     public User(String fullName, String email, String userType) {
         this.fullName = fullName;
@@ -15,7 +15,6 @@ public class User {
         this.userType = userType;
     }
 
- 
     public String getFullName() {
         return fullName;
     }

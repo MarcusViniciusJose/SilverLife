@@ -71,6 +71,7 @@
             android:layout_marginLeft="17dp"
             android:layout_marginRight="17dp"
             android:layout_weight="1"
+            android:backgroundTint="#F6A1A1"
             android:text="Avaliações" />
 
         <Button
@@ -78,6 +79,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#F6A1A1"
             android:text="Agendamento" />
     </LinearLayout>
 </RelativeLayout>

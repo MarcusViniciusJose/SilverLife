@@ -52,7 +52,7 @@
         android:id="@+id/register_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#F6A1A1"
         android:text="Entrar"
-        android:background="@drawable/button_background"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF" />
 </LinearLayout>
